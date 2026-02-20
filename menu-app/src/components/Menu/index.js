@@ -3,9 +3,9 @@ import MenuItem from "../MenuItem"
 export default class Menu extends React.Component {
   render() {
     return (
-      // <p>hi</p>
+      // <p>{this.props.items}</p>
       <div><h1>{this.props.menuName} Menu</h1>
-      <MenuItem {...this.props.menuItems[0]}></MenuItem>
+      <MenuItem {...this.props.menuItems}></MenuItem>
       </div>
       )
     }

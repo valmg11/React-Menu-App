@@ -13,16 +13,20 @@ const MenuApp = () => {
     <div className="App">
       <Menu
         menuName="Dinner"
-        menuItems={[
-          {
-            itemId: 1,
-            itemPrice: "12",
-            itemName: "Lasagne",
-            itemDescription:
-              "Meat and cheese layered between house-made pasta with bell peppers and onions.",
-          },
-        ]}
+        // menuItems={[
+        //   {
+        //     itemId: 1,
+        //     itemPrice: "12",
+        //     itemName: "Lasagne",
+        //     itemDescription:
+        //       "Meat and cheese layered between house-made pasta with bell peppers and onions.",
+        //   },
+        // ]}
       ></Menu>
+      <Menu
+        menuName="Dessert"
+
+      ></Menu>      
       {/* <MenuItem items={menuItem}></MenuItem> */}
     </div>
   )
