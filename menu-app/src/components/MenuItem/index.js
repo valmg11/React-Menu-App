@@ -55,11 +55,13 @@ import React from "react"
 // ]
 
 const items = [{
+  // item 1
   "itemId": 1,
   "itemPrice": "12",
   "itemName": "Lasagne",
   "itemDescription": "Meat and cheese layered between house-made pasta with bell peppers and onions."
 },
+// item 2
 // {
 //   "itemId": 2,
 //   "itemPrice": "10",
