@@ -1,5 +1,5 @@
 import React from "react"
-// let items = [
+// const items = [
 //   {
 //     menuName: "Dinner",
 //     menuItems: [
@@ -54,22 +54,24 @@ import React from "react"
 //   }
 // ]
 
-const items = [{
-  // item 1
-  "itemId": 1,
-  "itemPrice": "12",
-  "itemName": "Lasagne",
-  "itemDescription": "Meat and cheese layered between house-made pasta with bell peppers and onions."
-},
-// item 2
-// {
-//   "itemId": 2,
-//   "itemPrice": "10",
-//   "itemName": "Cheese Ravioli",
-//   "itemDescription": "Cheese-filled ravioli served with house red sauce."
-// },
-]
-console.log("item:", items[0].itemName);
+// // const items = [{
+// //   // item 1
+// //   "itemId": 1,
+// //   "itemPrice": "12",
+// //   "itemName": "Lasagne",
+// //   "itemDescription": "Meat and cheese layered between house-made pasta with bell peppers and onions."
+// // },
+// // // item 2
+// // // {
+// // //   "itemId": 2,
+// // //   "itemPrice": "10",
+// // //   "itemName": "Cheese Ravioli",
+// // //   "itemDescription": "Cheese-filled ravioli served with house red sauce."
+// // // },
+// ]
+// console.log("item:", items[0].menuItems[0].itemName, ",",
+//   items[0].menuItems[1].itemName
+// );
 // Assume that an object is passed in and assigned to the props variable with the following properties:
 
 // {

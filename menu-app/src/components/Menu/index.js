@@ -4,8 +4,12 @@ export default class Menu extends React.Component {
   render() {
     return (
       // <p>{this.props.items}</p>
+
+      //prints menu name
       <div><h1>{this.props.menuName} Menu</h1>
-      <MenuItem {...this.props.menuItems}></MenuItem>
+      {/* <MenuItem {...this.props.menuItems[0]}></MenuItem> */}
+      <p>test</p>
+      <button>Hello</button>
       </div>
       )
     }

@@ -1,19 +1,115 @@
-// This should be included in the App.js file in order to render 
-// it to the screen. Note we were providing the menuItem object 
-// explicitly, so there isn't anything passed in here. The following 
-// should replace the existing App.js contents, as symbols can only be defined once.
+// // This should be included in the App.js file in order to render 
+// // it to the screen. Note we were providing the menuItem object 
+// // explicitly, so there isn't anything passed in here. The following 
+// // should replace the existing App.js contents, as symbols can only be defined once.
+// import "./App.css"
+// // import "App.css"
+// import MenuApp from "./components/MenuApp"
+// // let data = {...} 
+// let data = [
+//   {menuName:"Dinner", menuItems:[0]},
+//   {menuName:"Dessert", menuItems:[0]}
+// ];
+// // (include the data array from above).
+// const App = () => {
+//   return (
+//     <div className="App">
+//     <MenuApp />
+//     {/* // example */}
+//     {/* <MenuApp menuData = {data} /> */}
+//     {/* // how it looks like in actual application */}
+//     </div>
+//   )
+//   //   return (
+//   //   <div className="App">
+//   //     <MenuApp
+//   //       menuName="Dinner"
+//   //       // menuItems={[
+//   //       //   {
+//   //       //     itemId: 1,
+//   //       //     itemPrice: "12",
+//   //       //     itemName: "Lasagne",
+//   //       //     itemDescription:
+//   //       //       "Meat and cheese layered between house-made pasta with bell peppers and onions.",
+//   //       //   },
+//   //       // ]}
+//   //     ></MenuApp>
+//   //     <MenuApp
+//   //       menuName="Dessert"
+
+//   //     ></MenuApp>      
+//   //     {/* <MenuItem items={menuItem}></MenuItem> */}
+//   //   </div>
+//   // )
+// }
+// export default App
 import "./App.css"
-// import "App.css"
 import MenuApp from "./components/MenuApp"
-// let data = {...} (include the data array from above).
-const App = () => {
+
+function App() {
+  let menuData = [
+    {
+      menuName: "Dinner",
+      menuItems: [
+        {
+          itemId: 1,
+          itemPrice: "12",
+          itemName: "Lasagne",
+          itemDescription:
+            "Meat and cheese layered between house-made pasta with bell peppers and onions.",
+        },
+        {
+          itemId: 2,
+          itemPrice: "10",
+          itemName: "Cheese Ravioli",
+          itemDescription: "Cheese-filled ravioli served with house red sauce.",
+        },
+        {
+          itemId: 3,
+          itemPrice: "14",
+          itemName: "Chicken Parmesan",
+          itemDescription:
+            "Breaded chicken topped with marinara sauce and lots of cheese served over house made spaghetti.",
+        },
+      ],
+    },
+    {
+      menuName: "Dessert",
+      menuItems: [
+        {
+          itemId: 45,
+          itemPrice: "10",
+          itemName: "Chocolate Lava Cake",
+          itemDescription: "Dark chocolate molten lava cake. Serves 2-3.",
+        },
+        {
+          itemId: 47,
+          itemPrice: "8",
+          itemName: "Tiramisu",
+          itemDescription:
+            "Layers of espresso-soaked ladyfingers and marscarpone cream topped with cocoa and espresso powder.",
+        },
+        {
+          itemId: 49,
+          itemPrice: "5",
+          itemName: "Cannolis",
+          itemDescription:
+            "Three flaky pastries enclosing a rich, ricotta filling dotted with decadent chocolate chips.",
+        },
+        {
+          itemId: 50,
+          itemPrice: "5",
+          itemName: "Cappuccino",
+          itemDescription: "Steamed milk with two ristretto shots of espresso.",
+        },
+      ],
+    },
+  ]
   return (
     <div className="App">
-    <MenuApp />
-    {/* // example */}
-    {/* <MenuApp menudata = {data} /> */}
-    {/* // how it looks like in actual application */}
+        <MenuApp data={menuData} />
     </div>
   )
 }
+
 export default App
