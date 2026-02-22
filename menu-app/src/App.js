@@ -43,9 +43,10 @@
 //   // )
 // }
 // export default App
-import "./App.css"
-import MenuApp from "./components/MenuApp"
+// import "./App.css"
+import MenuApp from "./components/MenuApp/index"
 
+// stores all data
 function App() {
   let menuData = [
     {
@@ -107,6 +108,7 @@ function App() {
   ]
   return (
     <div className="App">
+      {/* passes menuData to MenuApp */}
         <MenuApp data={menuData} />
     </div>
   )

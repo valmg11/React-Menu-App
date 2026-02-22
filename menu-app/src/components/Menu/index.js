@@ -1,15 +1,25 @@
 import React from "react"
-import MenuItem from "../MenuItem"
+import MenuItem from "../MenuItem/index"
+
 export default class Menu extends React.Component {
+
   render() {
+
+    // console.log(this.props.menuItems);
     return (
       // <p>{this.props.items}</p>
 
       //prints menu name
-      <div><h1>{this.props.menuName} Menu</h1>
-      {/* <MenuItem {...this.props.menuItems[0]}></MenuItem> */}
-      <p>test</p>
-      <button>Hello</button>
+      <div>
+        <h1>{this.props.menuName} Menu</h1>
+
+        {/* <MenuItem {...this.props.menuItems}></MenuItem> */}
+        {this.props.menuItems.map((item) => (<MenuItem
+        key={item.itemId}
+        items={item}
+        />))}
+        {/* <MenuItem items={this.props.menuItems[0].itemName}/>
+        <MenuItem items={this.props.menuItems[1].itemName}/> */}
       </div>
       )
     }
